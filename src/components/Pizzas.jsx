@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+
 
 
 function Pizzas() {
@@ -67,7 +69,11 @@ function Pizzas() {
                       </div>
 
                       <div className="botones-card">
-                        <Button variant="dark">Ver Más 👀</Button>
+                       
+                        <Link to={`/pizza/${pizza.id}`}>
+                          <Button variant="dark">Ver Más 👀</Button>
+                        </Link>
+
                         <Button variant="dark">Añadir 🛒</Button>
                       </div>
                     </div>
