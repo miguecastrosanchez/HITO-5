@@ -154,3 +154,64 @@ body {
 .card-pizza {
   height: 100%;
 }
+
+/* DISEÑO ERROR 404 */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido {
+  flex: 1;
+}
+
+.not-found {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+.not-found-card {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.not-found-card h1 {
+  font-size: 90px;
+  font-weight: bold;
+  color: #dc3545;
+  margin-bottom: 0;
+}
+
+.not-found-card h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+.not-found-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.pizza-icon {
+  font-size: 55px;
+  margin-bottom: 25px;
+}
+
+.not-found-btn {
+  padding: 10px 30px;
+  font-weight: bold;
+  border-radius: 8px;
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 
-function Register(){
+function Formregister(){
 
 //ESTADOS DE INPUT
 const [email, setEmail] = useState("")
@@ -60,4 +60,4 @@ return(
 
 }
 
-export default Register;
+export default Formregister;

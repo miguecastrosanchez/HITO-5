@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import { useState } from "react"
 
-function Login(){
+function comLogin(){
 
 const [email, setEmail] = useState("")
 
@@ -57,5 +57,4 @@ const handSubmit = (e)=>{
 
 }
 
-export default Login
-
+export default comLogin

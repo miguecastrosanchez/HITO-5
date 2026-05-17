@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 
-function Pizza() {
+
+function Pizzas() {
   const [pizzas, setPizzas] = useState([]);
 
   const getPizzas = async () => {
@@ -17,6 +18,7 @@ function Pizza() {
 
   return (
     <>
+
       {pizzas.length === 0 ? (
         <div
           className="d-flex justify-content-center align-items-center"
@@ -76,8 +78,9 @@ function Pizza() {
           </div>
         </div>
       )}
+     
     </>
   );
 }
 
-export default Pizza;
+export default Pizzas;

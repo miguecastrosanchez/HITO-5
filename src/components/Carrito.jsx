@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 
 
-function Cart(){
+function Carrito(){
 
   const [productos,setProductos] = useState([
     {
@@ -112,4 +112,4 @@ return(
 
 }
 
-export default Cart
+export default Carrito
