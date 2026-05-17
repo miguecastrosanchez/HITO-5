@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Pizza() {
-  const selecpizza = 2;
+ 
+  const { id } = useParams();
 
   const [pizza, setPizza] = useState(null);
 
-  const apiUrl = "https://hito-4.onrender.com/api/pizzas/p00" + selecpizza;
+  const apiUrl = "https://hito-4.onrender.com/api/pizzas/" + id;
 
   const getPizzaSelect = async () => {
     const respuesta = await fetch(apiUrl);
@@ -19,7 +22,7 @@ function Pizza() {
 
   useEffect(() => {
     getPizzaSelect();
-  }, []);
+  }, [id]);
 
   if (pizza === null) {
     return (
@@ -81,10 +84,12 @@ function Pizza() {
                   <Button variant="dark" size="lg">
                     Añadir al carrito 🛒
                   </Button>
-
-                  <Button variant="outline-dark" size="lg">
-                    Volver a la tienda 👀
-                  </Button>
+                  <Link to="/" className="d-grid gap-3 mt-4">
+                           <Button variant="outline-dark" size="lg">
+                            Volver a la tienda 👀
+                            </Button>
+                  </Link>
+                 
                 </div>
               </div>
             </div>
